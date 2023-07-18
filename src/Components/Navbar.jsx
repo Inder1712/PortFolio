@@ -31,9 +31,7 @@ export default function Navbar() {
           >
             Projects
           </Link>
-          <div className="lg:w-36 md:w-24  bg-slate-950 duration-300 h-[70%] text-lg   hover:bg-slate-900 hover:    flex justify-center items-center">
-            Blog
-          </div>
+
           <Link
             to="/contact"
             className="lg:w-36 md:w-24  bg-slate-950 duration-300 h-[70%] text-lg   hover:bg-slate-900 hover:    flex justify-center items-center"
@@ -65,26 +63,28 @@ export default function Navbar() {
             </button>
             <Link
               to="/"
+              onClick={() => setFlip(!flip)}
               className="h-12 w-52 bg-slate-950 flex justify-center text-lg   items-center"
             >
               Home
             </Link>
             <Link
+              onClick={() => setFlip(!flip)}
               to="/about"
               className="h-12 w-52 bg-slate-950 flex justify-center text-lg   items-center"
             >
               About
             </Link>
             <Link
+              onClick={() => setFlip(!flip)}
               to="/projects"
               className="h-12 w-52 bg-slate-950 flex justify-center text-lg   items-center"
             >
               Projects
             </Link>
-            <div className="h-12 w-52 bg-slate-950 flex justify-center text-lg   items-center">
-              Blog
-            </div>
+
             <Link
+              onClick={() => setFlip(!flip)}
               to="/contact"
               className="h-12 w-52 bg-slate-950 flex justify-center text-lg   items-center"
             >

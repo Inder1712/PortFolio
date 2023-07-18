@@ -119,7 +119,7 @@ export default function Projects() {
             className={`h-[100%] transition-all duration-2000 ease-in-out `}
           />
         </div>
-        <div className="h-[701px] lg:w-[60%] 2xl:w-[700px] md:w-[60%] text-white flex bg-slate-950 flex-col justify-center p-9">
+        <div className="h-[791px] lg:w-[60%] 2xl:w-[700px] md:w-[60%] text-white flex bg-slate-950 flex-col justify-center p-9">
           <div className="text-4xl h-[10%]">News Site</div>
           <div className="h-fit pb-8">
             I built a news website using Tailwind CSS and React.js, leveraging

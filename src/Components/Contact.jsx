@@ -14,7 +14,7 @@ export default function Contact() {
   return (
     <div className="bg-gray-900 md:h-screen h-fit w-screen flex justify-center items-center pt-10 md:mt-0 mt-10 text-center text-white text-xl font-bold">
       <div className="bg-slate-950 h-[90%] w-[90%] md:flex-row flex flex-col space-y-10 py-9  md:space-y-0 justify-between items-center ">
-        <div className="md:w-[33%] flex flex-col justify-start items-center space-y-10 pt-5 h-[100%] bg-slate-900 md:bg-slate-950 md:pb-0 px-4 w-[80%] pb-5 rounded-lg">
+        <div className="md:w-[33%] flex flex-col justify-start items-center space-y-10 pt-5 h-[100%] md:bg-slate-950 md:pb-0 px-4 w-[80%] pb-5 rounded-lg">
           <img src={GitHub} alt="" className="w-[50%]" />
           <div>
             Contact Through <br /> Github
@@ -29,7 +29,7 @@ export default function Contact() {
             </button>
           </a>
         </div>
-        <div className="md:w-[33%] flex flex-col justify-start items-center space-y-10 pt-5 h-[100%] bg-slate-900 md:bg-slate-950 md:pb-0 px-4 w-[80%] pb-5 rounded-lg">
+        <div className="md:w-[33%] flex flex-col justify-start items-center space-y-10 pt-5 h-[100%] md:bg-slate-950 md:pb-0 px-4 w-[80%] pb-5 rounded-lg">
           <img src={LinkedIn} alt="" className="w-[50%]" />
           <div>
             Contact Through <br /> LinkedIn
@@ -44,7 +44,7 @@ export default function Contact() {
             </button>
           </a>
         </div>
-        <div className="md:w-[33%] flex flex-col justify-start items-center space-y-10 pt-5 h-[100%] bg-slate-900 md:bg-slate-950 md:pb-0 px-4 w-[80%] pb-5 rounded-lg">
+        <div className="md:w-[33%] flex flex-col justify-start items-center space-y-10 pt-5 h-[100%] md:bg-slate-950 md:pb-0 px-4 w-[80%] pb-5 rounded-lg">
           <img src={Phone} alt="" className="w-[50%]" />
           <div>
             Contact direct <br /> through phone

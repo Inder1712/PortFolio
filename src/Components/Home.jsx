@@ -1,55 +1,15 @@
 import React, { useState, useEffect } from "react";
-import hu from "../Resources/hu.png";
-import p1 from "../Resources/p1.png";
 import p2 from "../Resources/p2.png";
-import p3 from "../Resources/p3.png";
+import internship2 from "../Resources/internship2.png";
 import { Link } from "react-router-dom";
 
-import hu3 from "../Resources/hu3.png";
 import hu2 from "../Resources/hu2.svg";
 import Internship from "../Resources/Internship.jpg";
-import Internship2 from "../Resources/internship2.png";
-import scaptor from "../Resources/scaptor.png";
 
 export default function Home() {
-  const [count, setCount] = useState(1);
-  const [img, setImg] = useState(hu);
-  const [img2, setImg2] = useState(Internship);
-  const [img3, setImg3] = useState(p1);
-  const [flip, setFlip] = useState(true);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCount((prevCount) => prevCount + 1);
-    }, 4000);
-
-    return () => clearInterval(interval);
-  }, []);
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  useEffect(() => {
-    if (count === 1 || count === 2) {
-      setImg(hu);
-      setImg3(p1);
-      setImg2(Internship);
-      setFlip((flip) => !flip);
-    } else if (count === 3 || count === 4) {
-      setImg(hu2);
-      setImg3(p2);
-      setImg2(Internship2);
-      setFlip((flip) => !flip);
-    } else if (count === 5 || count === 6) {
-      setImg(hu3);
-      setImg3(p3);
-      setImg2(scaptor);
-      setFlip((flip) => !flip);
-    }
-    if (count > 6) {
-      setCount(1);
-    }
-  }, [count]);
 
   return (
     <div className="flex flex-col mt-10 z-10 justify-center w-screen items-center bg-gray-900 h-fit py-10">
@@ -76,22 +36,18 @@ export default function Home() {
         </div>
         <div className="h-[551px]  2xl:w-[550px] lg:w-[40%] md:w-[40%] flex bg-slate-950 justify-center items-center">
           <img
-            src={img}
+            src={hu2}
             alt=""
-            className={`w-[90%] z-40 transition-all duration-2000 ease-in-out ${
-              flip ? "opacity-100" : "opacity-0"
-            }`}
+            className={`w-[90%] z-40 transition-all duration-2000 ease-in-out `}
           />
         </div>
       </div>
       <div className="h-fit md:flex hidden 2xl:w-fit  lg:w-screen md:w-screen">
         <div className="h-[551px] 2xl:w-[550px] lg:w-[40%] bg-slate-950 md:w-[40%] flex justify-center items-center">
           <img
-            src={img2}
+            src={Internship}
             alt=""
-            className={`w-[90%] transition-all duration-2000 ease-in-out ${
-              flip ? "opacity-100" : "opacity-0"
-            }`}
+            className={`w-[90%] transition-all duration-2000 ease-in-out `}
           />
         </div>
         <div className="h-[551px] lg:w-[60%] 2xl:w-[700px] text-white flex md:w-[60%] bg-slate-950 flex-col justify-center p-9">
@@ -135,11 +91,9 @@ export default function Home() {
         </div>
         <div className="h-[551px] 2xl:w-[550px] md:w-[40%]  lg:w-[60%] flex bg-slate-950 justify-center items-center">
           <img
-            src={img3}
+            src={internship2}
             alt=""
-            className={`w-[90%] transition-all duration-2000 ease-in-out ${
-              flip ? "opacity-100" : "opacity-0"
-            }`}
+            className={`w-[90%] transition-all duration-2000 ease-in-out `}
           />
         </div>
       </div>
@@ -149,11 +103,9 @@ export default function Home() {
       <div className="h-fit 2xl:w-fit lg:w-screen  md:hidden md:w-screen">
         <div className="h-[251px] 2xl:w-[550px] lg:w-[40%] md:w-[40%] flex bg-slate-950 justify-center items-center">
           <img
-            src={img}
+            src={hu2}
             alt=""
-            className={`h-[100%] transition-all duration-2000 ease-in-out ${
-              flip ? "opacity-100" : "opacity-0"
-            }`}
+            className={`h-[100%] transition-all duration-2000 ease-in-out `}
           />
         </div>
         <div className="h-[551px] lg:w-[60%] 2xl:w-[700px] md:w-[60%] text-white flex bg-slate-950 flex-col justify-center p-9">
@@ -180,11 +132,9 @@ export default function Home() {
       <div className="h-fit 2xl:w-fit lg:w-screen  md:hidden md:w-screen">
         <div className="h-[251px] 2xl:w-[550px] lg:w-[40%] md:w-[40%] flex bg-slate-950 justify-center items-center">
           <img
-            src={img2}
+            src={Internship}
             alt=""
-            className={`h-[100%] transition-all duration-2000 ease-in-out ${
-              flip ? "opacity-100" : "opacity-0"
-            }`}
+            className={`h-[100%] transition-all duration-2000 ease-in-out `}
           />
         </div>
         <div className="h-[551px] lg:w-[60%] 2xl:w-[700px] text-white flex md:w-[60%] bg-slate-950 flex-col justify-center p-9">
@@ -208,11 +158,9 @@ export default function Home() {
       <div className="h-fit 2xl:w-fit lg:w-screen  md:hidden md:w-screen">
         <div className="h-[251px] 2xl:w-[550px] lg:w-[40%] md:w-[40%] flex bg-slate-950 justify-center items-center">
           <img
-            src={img3}
+            src={internship2}
             alt=""
-            className={`h-[100%] transition-all duration-2000 ease-in-out ${
-              flip ? "opacity-100" : "opacity-0"
-            }`}
+            className={`h-[100%] transition-all duration-2000 ease-in-out `}
           />
         </div>
         <div className="h-[551px] 2xl:w-[700px] lg:w-[50%] text-white  md:w-[60%] flex bg-slate-950 flex-col justify-center p-9">
