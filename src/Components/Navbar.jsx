@@ -9,8 +9,11 @@ export default function Navbar() {
   return (
     <div className="absolute z-10 text-white bg-slate-950 ">
       <div className=" bg-slate-950 md:flex hidden h-14 w-screen  items-center shadow-md shadow-black">
-        <div className="w-72 h-[100%] bg-slate-950  flex items-center justify-center text-lg">
-          Inder
+        <div
+          className="w-72 h-[100%] bg-slate-950  flex items-center justify-center pt-1 italic text-lg font-serif"
+          style={{ fontFamily: "Dancing Script", fontSize: "25px " }}
+        >
+          Inder's Portfolio
         </div>
         <div className=" h-[100%] flex justify-center items-center">
           <Link
@@ -48,6 +51,7 @@ export default function Navbar() {
             : "  p-4 w-screen   transition-all duration-500"
         }`}
       >
+        {" "}
         {!flip && (
           <button onClick={() => setFlip(true)}>
             <MenuIcon fontSize="large" />
@@ -91,7 +95,13 @@ export default function Navbar() {
               Contact
             </Link>
           </div>
-        )}
+        )}{" "}
+        <div
+          className="w-full  h-full flex justify-end"
+          style={{ fontFamily: "Dancing Script", fontSize: "22px" }}
+        >
+          Inder's Portfolio
+        </div>
       </div>
     </div>
   );
