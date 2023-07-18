@@ -97,7 +97,7 @@ export default function Navbar() {
           </div>
         )}{" "}
         <div
-          className="w-full  h-full flex justify-end"
+          className={`w-full  h-full  justify-end ${flip ? "hidden" : "flex"}`}
           style={{ fontFamily: "Dancing Script", fontSize: "22px" }}
         >
           Inder's Portfolio
