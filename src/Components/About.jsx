@@ -10,7 +10,7 @@ export default function About() {
     <div className="h-fit w-screen bg-gray-900 flex py-20 justify-center items-center">
       <div className="h-fit w-[90%] bg-slate-950 shadow-md shadow-black ">
         <div className=" h-fit w-fit  md:flex">
-          <div className="   flex p-10 h-fit  w-fit bg-black">
+          <div className="   flex p-10 h-fit  w-fit ">
             <img
               src={profile}
               alt=""
