@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import profile from "../Resources/profile.jpg";
 
 export default function About() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="h-fit w-screen bg-gray-900 flex py-20 justify-center items-center">
       <div className="h-fit w-[90%] bg-slate-950 shadow-md shadow-black ">

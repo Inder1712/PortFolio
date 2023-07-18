@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import p1 from "../Resources/p1.png";
 import p2 from "../Resources/p2.png";
 import p3 from "../Resources/p3.png";
 export default function Projects() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="flex flex-col mt-10 justify-center w-screen items-center bg-gray-900 h-fit py-10">
       <div className="h-fit 2xl:w-fit lg:w-screen md:flex hidden  md:w-screen">
@@ -115,7 +119,7 @@ export default function Projects() {
             className={`h-[100%] transition-all duration-2000 ease-in-out `}
           />
         </div>
-        <div className="h-[551px] lg:w-[60%] 2xl:w-[700px] md:w-[60%] text-white flex bg-slate-950 flex-col justify-center p-9">
+        <div className="h-[701px] lg:w-[60%] 2xl:w-[700px] md:w-[60%] text-white flex bg-slate-950 flex-col justify-center p-9">
           <div className="text-4xl h-[10%]">News Site</div>
           <div className="h-fit pb-8">
             I built a news website using Tailwind CSS and React.js, leveraging
@@ -148,7 +152,7 @@ export default function Projects() {
             className={`h-[100%] transition-all duration-2000 ease-in-out `}
           />
         </div>
-        <div className="h-[551px] lg:w-[60%] 2xl:w-[700px] text-white flex md:w-[60%] bg-slate-950 flex-col justify-center p-9">
+        <div className="h-[701px] lg:w-[60%] 2xl:w-[700px] text-white flex md:w-[60%] bg-slate-950 flex-col justify-center p-9">
           <div className="text-4xl h-[10%]">Dice Game</div>
           <div className="h-fit pb-8">
             I developed an exciting dice game using a combination of React.js,
@@ -181,7 +185,7 @@ export default function Projects() {
             className={`h-[100%] transition-all duration-2000 ease-in-out `}
           />
         </div>
-        <div className="h-[551px] 2xl:w-[700px] lg:w-[50%] text-white  md:w-[60%] flex bg-slate-950 flex-col justify-center p-9">
+        <div className="h-[701px] 2xl:w-[700px] lg:w-[50%] text-white  md:w-[60%] flex bg-slate-950 flex-col justify-center p-9">
           <div className="text-4xl h-[10%]">To do list</div>
           <div className="h-fit pb-8">
             I developed a powerful full-stack to-do list application using

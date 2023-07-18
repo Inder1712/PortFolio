@@ -21,11 +21,14 @@ export default function Home() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCount((prevCount) => prevCount + 1);
-    }, 2000);
+    }, 4000);
 
     return () => clearInterval(interval);
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   useEffect(() => {
     if (count === 1 || count === 2) {
       setImg(hu);
@@ -49,7 +52,7 @@ export default function Home() {
   }, [count]);
 
   return (
-    <div className="flex flex-col mt-10 justify-center w-screen items-center bg-gray-900 h-fit py-10">
+    <div className="flex flex-col mt-10 z-10 justify-center w-screen items-center bg-gray-900 h-fit py-10">
       <div className="h-fit 2xl:w-fit lg:w-screen md:flex hidden  md:w-screen">
         <div className="h-[551px] lg:w-[60%] 2xl:w-[700px] md:w-[60%] text-white flex bg-slate-950 flex-col justify-center p-9">
           <div className="text-4xl h-[10%]">Hi, I'm Inder!</div>
@@ -71,11 +74,11 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="h-[551px] 2xl:w-[550px] lg:w-[40%] md:w-[40%] flex bg-slate-950 justify-center items-center">
+        <div className="h-[551px]  2xl:w-[550px] lg:w-[40%] md:w-[40%] flex bg-slate-950 justify-center items-center">
           <img
             src={img}
             alt=""
-            className={`w-[90%] transition-all duration-2000 ease-in-out ${
+            className={`w-[90%] z-40 transition-all duration-2000 ease-in-out ${
               flip ? "opacity-100" : "opacity-0"
             }`}
           />

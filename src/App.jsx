@@ -9,12 +9,12 @@ import Contact from "./Components/Contact";
 import Projects from "./Components/Projects";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <Router>
       <div className="absolute bg-gray-900 text-white">
-        <Navbar />
+        <div className="sticky top-0 z-40">
+          <Navbar />
+        </div>
 
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
