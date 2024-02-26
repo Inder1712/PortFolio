@@ -60,7 +60,7 @@ export default function Home() {
             and visually appealing web applications.
           </div>
           <div className="h-14 w-[90%]">
-            <a target="_blank" href="https://scaptor.com/internship">
+            <a target="_blank" href="https://variablee.com/internship">
               <button className=" bg-blue-500 rounded-xl hover:bg-blue-400 hover:shadow-blue-500 shadow-sm shadow-blue-500/50 h-full w-44">
                 View Internship
               </button>
@@ -147,7 +147,7 @@ export default function Home() {
             and visually appealing web applications.
           </div>
           <div className="h-14 w-[90%]">
-            <a target="_blank" href="https://scaptor.com/internship">
+            <a target="_blank" href="https://variablee.com/internship">
               <button className="bg-blue-500  rounded-xl hover:bg-blue-400 hover:shadow-blue-500 shadow-sm shadow-blue-500/50 h-full w-44">
                 View Internship
               </button>
